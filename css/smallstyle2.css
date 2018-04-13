@@ -1,0 +1,281 @@
+html,body{
+	height: 100%;
+	overflow: hidden;
+	font-family: "MicroSoft YaHei"; 
+}
+img{
+	width: 100%;
+	height: auto;
+}
+.page{
+	width: 100%;
+	height: 100%;
+	max-width: 640px;
+	min-width: 321px;
+	background: url(../images/pg0_bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+.page.fill{
+	background: url(../images/pg2_bg.jpg) no-repeat bottom left;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.page.raffle{
+	background: url(../images/raffle_bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.snow>img{
+ position: absolute;
+ width: 5px;
+ -webkit-animation-iteration-count: infinite, infinite;
+ -webkit-animation-direction: normal, normal;
+ -webkit-animation-timing-function: linear, ease-in;
+}
+.close{
+	position: absolute;
+	width: 100%;
+	top:0px;
+	z-index: 5;
+}
+/*logo*/
+.page0_01{
+	width: 37.5%;
+	position: absolute;
+	top:0px;
+	left:0px;
+}
+/*下滑浮动*/
+.page1_03{
+	width: 10%;
+	position:absolute;
+	bottom:25px;
+	left:44%;
+	z-index:6;
+  -webkit-animation:fudong 1s linear 0s infinite alternate;
+}
+@-webkit-keyframes fudong{
+	from{
+		bottom:25px;
+	}
+	to{
+		bottom:0;
+	}
+}
+
+
+ .name{
+	position: absolute;
+	width: 70%;
+	text-align: center;
+}
+ .phone{
+	position: absolute;
+	width: 53%;
+	text-align: center;
+}
+
+.fill_div{
+  width: 100%;
+  z-index: 2;
+  top:25%;
+  position: absolute;
+}
+/*填资料 logo*/
+.fill_img1 {
+  margin-top: 11%;
+  z-index: 5;
+  position: absolute;
+}
+.fill_img2 {
+	z-index: 1;
+}
+.fill_img3 {
+  width: 46%;
+  vertical-align: middle;
+}
+.fill .input {
+	outline: none;
+	background-color: rgb(243,199,106);
+    font-weight: lighter;
+    font-size: 18px;
+    position: absolute;
+    height: 44px;
+    line-height: 44px;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    box-shadow:inset 0 0 10px 1px rgb(216,165,57);
+    z-index: 5;
+}
+
+.fill .fill_bg1{
+	margin-top: -47%;
+}
+.fill .fill_bg2{
+	margin-top: -31%;
+}
+.fill .tijiao{
+    width: 40%;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: -15%;
+    z-index: 7;
+}
+.fill .choujiang{
+	position: absolute;
+	width: 45.625%;
+	left:27.1%;
+	top:53%;
+	z-index: 99;
+}
+
+.share_word{
+	position: absolute;
+	top:22%;
+}
+.page .mask{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../images/rulecolor.png) repeat;
+	z-index: 99999;
+	display:none;
+	top:0%;
+}
+.page .share{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 99999;
+    display: none;
+}
+.share p{
+	font-size: 30px;
+	color:#fff;
+	text-align: center;
+	margin-top:50%
+}
+.share .arr{
+	width: 100%;
+	position: absolute;
+	top:5px;
+	right:10%;
+}
+
+/*第二版 2015-12-17*/
+.rule1
+{
+	width: 95%;
+	top: 0%;
+	position: absolute;
+}
+.reword_pg{
+	width: 100%;
+	height: auto;
+	/*top: 10%;*/
+	position: absolute;
+}
+.reword_link{
+	position: absolute;
+	width:66%;
+	left: 17%;
+	bottom: 10%; 
+}
+
+.raffle .point{
+	position: absolute;
+	width: 26.875%;
+	left:0%;
+	top:0%;
+}
+.raffle .real_wheel{
+	width: 100%;
+	height: auto;
+	top: 8%;
+	position: absolute;
+	z-index: 3;
+}
+/*转盘的指针*/
+.pg2_pointer{
+	width: 27.3%;
+	left:37.3%;
+	height: auto;
+	transform-origin:50% 63%;
+	-webkit-transform-origin:50% 63%;
+	position: absolute;
+	z-index: 5;
+}
+/*转盘的整体*/
+.pg2_wheel{
+
+}
+.rule2{
+    width: 36%;
+    height: auto;
+    left: 32%;
+    top: 55%;
+    position: absolute;
+}
+.trans {
+    -moz-transition: transform 10s ease;
+    -webkit-transition: -webkit-transform 10s ease;
+    -o-transition: transform 10s ease;
+    transition: transform 10s ease;
+    transition: -webkit-transform 10s ease;
+}
+.firstPrize{
+    -moz-transform: rotate(3600deg);
+    -webkit-transform: rotate(3600deg);
+    -o-transform: rotate(3600deg);
+    -ms-transform: rotate(3600deg);
+    transform: rotate(3600deg);
+}
+.secondPrize{
+    -moz-transform: rotate(3715deg);
+    -webkit-transform: rotate(3715deg);
+    -o-transform: rotate(3715deg);
+    -ms-transform: rotate(3715deg);
+    transform: rotate(3715deg);
+}
+.thirdPrize{
+    -moz-transform: rotate(3855deg);
+    -webkit-transform: rotate(3855deg);
+    -o-transform: rotate(3855deg);
+    -ms-transform: rotate(3855deg);
+    transform: rotate(3855deg);
+}
+.noPrize{
+    -moz-transform: rotate(3660deg);
+    -webkit-transform: rotate(3660deg);
+    -o-transform: rotate(3660deg);
+    -ms-transform: rotate(3660deg);
+    transform: rotate(3660deg);
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color: rgb(195,132,46);
+    font-family: "微软雅黑";
+    font-weight: bolder;
+    font-size: 25px;
+}
+input::-moz-placeholder { /* Mozilla  browsers */
+    color: rgb(195,132,46);
+    font-family: "微软雅黑";
+    font-weight: bolder;
+    font-size: 25px;
+}
+input::-ms-input-placeholder { /* Internet  browsers */
+    color: rgb(195,132,46);
+    font-family: "微软雅黑";
+    font-weight: bolder;
+    font-size: 25px;
+}

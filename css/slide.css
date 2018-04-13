@@ -1,0 +1,146 @@
+.page-current{z-index:1;}
+.hide{ display:none;}
+/*start:翻页效果动画*/
+
+.pt-page-moveToLeft {
+    -webkit-animation: moveToLeft .6s ease both;
+    -moz-animation: moveToLeft .6s ease both;
+    animation: moveToLeft .6s ease both;
+}
+.pt-page-moveFromRight {
+    -webkit-animation: moveFromRight .6s ease both;
+    -moz-animation: moveFromRight .6s ease both;
+    animation: moveFromRight .6s ease both;
+}
+
+.pt-page-moveToRight {
+    -webkit-animation: moveToRight .6s ease both;
+    -moz-animation: moveToRight .6s ease both;
+    animation: moveToRight .6s ease both;
+}
+.pt-page-moveFromLeft {
+    -webkit-animation: moveFromLeft .6s ease both;
+    -moz-animation: moveFromLeft .6s ease both;
+    animation: moveFromLeft .6s ease both;
+}
+
+
+.pt-page-moveToLeftFade {
+    -webkit-animation: moveToLeftFade .7s ease both;
+    -moz-animation: moveToLeftFade .7s ease both;
+    animation: moveToLeftFade .7s ease both;
+}
+
+.pt-page-moveFromLeftFade {
+    -webkit-animation: moveFromLeftFade .7s ease both;
+    -moz-animation: moveFromLeftFade .7s ease both;
+    animation: moveFromLeftFade .7s ease both;
+}
+
+.pt-page-moveToRightFade {
+    -webkit-animation: moveToRightFade .7s ease both;
+    -moz-animation: moveToRightFade .7s ease both;
+    animation: moveToRightFade .7s ease both;
+}
+
+.pt-page-moveFromRightFade {
+    -webkit-animation: moveFromRightFade .7s ease both;
+    -moz-animation: moveFromRightFade .7s ease both;
+    animation: moveFromRightFade .7s ease both;
+}
+
+@-webkit-keyframes moveToLeft {
+    to { -webkit-transform: translateX(-100%); }
+}
+@-moz-keyframes moveToLeft {
+    to { -moz-transform: translateX(-100%); }
+}
+@keyframes moveToLeft {
+    to { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes moveFromLeft {
+    from { -webkit-transform: translateX(-100%); }
+}
+@-moz-keyframes moveFromLeft {
+    from { -moz-transform: translateX(-100%); }
+}
+@keyframes moveFromLeft {
+    from { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes moveToRight { 
+    to { -webkit-transform: translateX(100%); }
+}
+@-moz-keyframes moveToRight { 
+    to { -moz-transform: translateX(100%); }
+}
+@keyframes moveToRight { 
+    to { transform: translateX(100%); }
+}
+
+@-webkit-keyframes moveFromRight {
+    from { -webkit-transform: translateX(100%); }
+}
+@-moz-keyframes moveFromRight {
+    from { -moz-transform: translateX(100%); }
+}
+@keyframes moveFromRight {
+    from { transform: translateX(100%); }
+}
+
+
+@-webkit-keyframes moveToTop {
+    from { }
+    to { -webkit-transform: translateY(-100%);transform: translateY(-100%); }
+}
+
+@keyframes moveToTop {
+    from { }
+    to { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+.pt-page-moveToTop {
+    -webkit-animation: moveToTop .6s ease both;
+    animation: moveToTop .6s ease both;
+}
+@-webkit-keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%);transform: translateY(100%); }
+    to { -webkit-transform: translateY(0%); transform: translateY(0%); }
+}
+
+@keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%); transform: translateY(100%); }
+    to { -webkit-transform: translateY(0%); transform: translateY(0%); }
+}
+
+.pt-page-moveFromBottom {
+    -webkit-animation: moveFromBottom .6s ease both;
+    animation: moveFromBottom .6s ease both;
+}
+
+@-webkit-keyframes moveToBottom {
+    from { }
+    to { -webkit-transform: translateY(100%);transform: translateY(100%); }
+}
+
+@keyframes moveToBottom {
+    from { }
+    to { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+.pt-page-moveToBottom {
+    -webkit-animation: moveToBottom .6s ease both;
+    animation: moveToBottom .6s ease both;
+}
+@-webkit-keyframes moveFromTop {
+    from { -webkit-transform: translateY(-100%);transform: translateY(-100%); }
+    to {-webkit-transform: translateY(0%);}
+}
+@keyframes moveFromTop {
+    from { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+    to {-webkit-transform: translateY(0%);}
+}
+
+.pt-page-moveFromTop{
+    -webkit-animation: moveFromTop .6s ease both;
+    animation: moveFromTop .6s ease both;
+}

@@ -1,0 +1,74 @@
+/*
+YUI 3.18.1 (build f7e7bcb)
+Copyright 2014 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{/*border-collapse:collapse;*/border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+@-webkit-keyframes scale {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; }
+
+    45% {
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 0.7; }
+
+    80% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; } }
+@keyframes scale {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; }
+
+    45% {
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 0.7; }
+
+    80% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1; } }
+
+.ball-pulse > div:nth-child(0) {
+    -webkit-animation: scale 0.75s 0s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: scale 0.75s 0s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.ball-pulse > div:nth-child(1) {
+    -webkit-animation: scale 0.75s 0.12s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: scale 0.75s 0.12s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.ball-pulse > div:nth-child(2) {
+    -webkit-animation: scale 0.75s 0.24s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: scale 0.75s 0.24s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.ball-pulse > div:nth-child(3) {
+    -webkit-animation: scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08);
+    animation: scale 0.75s 0.36s infinite cubic-bezier(.2, .68, .18, 1.08); }
+.ball-pulse > div {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 2px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    display: inline-block; }
+.loading{
+    position: absolute; top: 50%;
+    font-size: 16px;
+    left: 50%;
+    width: 60%;
+    -ms-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);z-index: 999;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding: 10px;
+}

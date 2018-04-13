@@ -1,0 +1,542 @@
+html,body{
+	height: 100%;
+	overflow: hidden;
+	font-family: "MicroSoft YaHei"; 
+}
+img{
+	width: 100%;
+	height: auto;
+}
+* { touch-action: none; }
+.page{
+	width: 100%;
+	height: 100%;
+	max-width: 640px;
+	min-width: 321px;
+	background: url(../images/pg0_bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+}
+.page.page1{
+	background: url(../images/pg1_bg.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.page.fill{
+	background: url(../images/pg2_bg.jpg) no-repeat bottom left;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+/*.page .share{
+	background: url(../images/share_01.png) no-repeat bottom left;
+	-webkit-background-size: cover;
+	background-size: cover;
+}*/
+
+
+
+/*logo*/
+.page0_01{
+	width: 17%;
+	position: absolute;
+	top:2%;
+	left:2%;
+	z-index: 20;
+}
+/*下滑浮动*/
+.page1_03{
+	width: 10%;
+	position:absolute;
+	bottom:25px;
+	left:44%;
+	z-index:6;
+  -webkit-animation:fudong 1s linear 0s infinite alternate;
+}
+@-webkit-keyframes fudong{
+	from{
+		bottom:25px;
+	}
+	to{
+		bottom:0;
+	}
+}
+/*开场css*/
+.page0 .logo{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    width: 1.44rem;
+}
+.page0 .pg0_rulebtn{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 6;
+    width: 1.78rem;
+}
+.page0 .pg0_04{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 1.91rem;
+}
+
+.page0 .step1 .stepContent,.page0 .rule .stepContent{
+	position: absolute;
+    top: 1.3rem;
+    width: 100%;
+    z-index: 6;
+    background: url(../images/pg0_01.png) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-size: 0;
+}
+.page0 .stepContent p{
+    width: 100%;
+    position: absolute;
+    font-size: 14px;
+    color: rgb(205,243,255);
+    text-align: center;
+    font-size: 0.35rem;
+}
+.page0 .stepContent .wprd1{
+    top: 1.8rem;
+}
+.page0 .stepContent .wprd2{
+    top: 3.3rem;
+}
+.page0 .stepContent .btn1{
+    width: 2.94rem;
+    left: 1.73rem;
+    bottom: 0.65rem;
+    position: absolute;
+    z-index: 6;
+}
+.page0 .stepContent .btn2{
+    width: 2.94rem;
+    left: 1.73rem;
+    bottom: 0.65rem;
+    position: absolute;
+    z-index: 6;
+}
+.page0 .step2 .selectContent{
+    position: absolute;
+    top: 2.33rem;
+    width: 100%;
+    z-index: 6;
+    background: url(../images/select_bg.png) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.page0 .step2 .selectContent .left{
+    width: 0.4rem;
+    top: 2.3rem;
+    left: 0.56rem;
+    position:absolute;
+}
+.page0 .step2 .selectContent .right{
+    width: 0.4rem;
+    top: 2.3rem;
+    right: 0.56rem;
+    position:absolute;
+}
+.page0 .step2 .selectContent .selectValue{
+    width: 2.47rem;
+    bottom: 0.3rem;
+    left: 1.96rem;
+    position: absolute;
+    z-index: 999;
+}
+.page0 .step2 .selectContent .content{
+    width: 4.22rem;
+    overflow: hidden;
+    position: absolute;
+    top:1.4rem;
+    left: 1.09rem;
+    font-size: 0px;
+}
+.page0 .step2 .selectContent .selectlist{
+    font-size: 0px;
+    width: 10.55rem;
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    /*top:1.6rem;
+    left: 1.09rem;*/
+    transition:transform 0.5s linear;
+}
+.page0 .step2 .selectContent .item{
+    /*display: table-cell;*/
+    width: 50%;
+}
+.page0 .step2 .selected{
+    width: 50%;
+    text-align: center;
+    font-size: 0px;
+    margin-bottom: -0.1rem;
+    /*position: absolute;*/
+    top: 1.3rem;
+}
+.page0 .step2 .selected .arrow{
+    width: 0.32rem;
+}
+.page0 .step3{
+    width: 100%;
+    font-size: 2.54rem;
+    color: white;
+    text-align: center;
+    padding-top: 4.2rem; 
+}
+/*再来一次*/
+.page0 .again .againcontent{
+    position: absolute;
+    top: 1.64rem;
+    width: 100%;
+    z-index: 6;
+    background: url(../images/again_bg.png) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-size: 0;
+}
+.page0 .again .again_btn{
+    width: 3.01rem;
+    top: 3.8rem;
+    left: 1.7rem;
+    position: absolute;
+}
+.page0 .score{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0.2rem;
+    font-size: 0.3rem;
+}
+.page0 .score span{
+    color: #0e1747;
+}
+.page0 .score .score1{
+    width: 100%;
+}
+.page0 .score .pg0_02{
+    width: 0.84rem;
+    vertical-align: middle;
+}
+.page0 .score .pg0_03{
+    width: 1.32rem;
+    vertical-align: middle;
+}
+.page0 .wave{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 0px;
+}
+.page0 .wave .pg0_wave1{
+    width: 2.22rem;
+    left: 2.13rem;
+    top: 0px;
+    z-index: 1;
+    position: absolute;
+}
+.page0 .wave .pg0_main{
+    width: 1.55rem;
+    left: 2.42rem;
+    top: 10px;
+    z-index: 2;
+    position: absolute;
+}
+.page0 .wave .pg0_wave2{
+    width: 2.22rem;
+    left: 2.13rem;
+    top: 0px;
+    z-index: 3;
+    position: absolute;
+}
+
+.page0 .time{
+    width: 100%;
+    bottom:0.2rem;
+    z-index: 3;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 0.3297rem;
+}
+.page0 .time .hastime{
+    font-size: 0.4121rem;
+}
+.page0 .main{
+    width: 100%;
+    left: 0px;
+    top: 1.94rem;
+    bottom: 1.2rem;
+    position: absolute;
+    /*z-index: 999;*/
+    font-size: 0px;
+    /*background-color: red;*/
+    overflow: hidden;
+}
+.page0 .main .hor {
+    position: relative;
+    width: 0.8rem;
+    height: 0.5rem;
+    left: 2.785rem;
+    top: 0px;
+    z-index: 5;
+    /*overflow: hidden;*/
+}
+.page0 .main .hor .ver{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.page0 .main .hor .ver .hanger{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/hanger.png) center bottom no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    transform-origin:top;
+    /*transform: rotate(30deg);*/
+}
+.page0 .main .hor .ver .line{
+    width: 8px;
+    height: 1000px;
+    /*margin-left: 0.375rem;*/
+    margin-bottom: -5px;
+    background: url(../images/line.png) center center repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    position: absolute;
+    overflow: hidden;
+    top: -1000px;
+    transform-origin:bottom;
+}
+.page0 .main .transition1{
+    transition:transform 0.5s linear;
+}
+.page0 .main .countWord{
+    color: white;
+    font-size: 25px;
+    width: 1.08rem;
+    text-align: center;
+    position: absolute;
+    opacity: 0;
+}
+.page0 .main .tishi{
+    color: white;
+    font-size: 12px;
+    width: 1.08rem;
+    text-align: center;
+    position: absolute;
+}
+
+/*开始抽奖*/
+.page1 .reword_btn{
+  width: 3.12rem;
+  z-index: 2;
+  bottom:1.4rem;
+  position: absolute;
+  left: 1.64rem;
+}
+/*九宫格背景*/
+.page1 .real_wheel{
+    /*top: 22%;
+    position: absolute;*/
+    z-index: 3;
+    width: 5.6rem;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 2.04rem;
+    background: url(../images/squared.png) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-size: 0px;
+    padding: 0.4rem;
+    box-sizing: border-box;
+    /*transform-origin:top;*/
+}
+
+.page1 .real_wheel .gap{
+    width: 0.2rem;
+}
+.page1 .real_wheel .gap-2 {
+    height: 0.15rem;
+    border-width: 0px;
+}
+.page1 .real_wheel .item {
+    width: 1.4rem;
+    height: 1.4rem;
+    border: solid 0.04rem white;
+    box-sizing: border-box;
+}
+.page1 .real_wheel .item.active{
+    background-color: rgb(32,61,151);
+    -webkit-box-shadow: 0 0 18px  yellow;
+    -moz-box-shadow: 0 0 18px  yellow;
+    box-shadow: 0 0 18px  yellow;
+}
+.page1 .real_wheel img{
+    width: 1.44rem;
+    text-align: center;
+}
+/*弹出中奖框的背景*/
+.page1 .reword .rewordcontent{
+    width: 100%;
+    position: absolute;
+    top: 1.2rem;
+    z-index: 7;
+    background: url(../images/reword_bg.png) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.page1 .reword .rewordcontent .fill_tijiao{
+    width: 2.95rem;
+    position: absolute;
+    left: 1.72rem;
+    bottom: 5%;
+    z-index: 7;
+}
+.page1 .reword .showinfo{
+    width: 5.45rem;
+    margin-left: 0.475rem;
+    font-size: 0.29rem;
+    height: 0.34rem;
+    line-height: 0.34rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0.4rem;
+}
+.page1 .reword .award{
+    width: 5.45rem;
+    color: #f8a900;
+    font-size: 0.33rem;
+    height: 0.34rem;
+    line-height: 0.34rem;
+    /*position: absolute;*/
+    margin-left: 0.475rem;
+    /*top: 1rem;*/
+    z-index: 7;
+}
+.page1 .reword .rewordtitle{
+    width: 5.45rem;
+    text-align: center;
+    /*position: absolute;*/
+    margin-left: 0.475rem;
+    /*top: 1rem;*/
+    z-index: 7;
+    font-size: 0.29rem;
+    height: 0.34rem;
+    line-height: 0.34rem;
+    color: #ffffff;
+    margin-top: 0.15rem;
+}
+.page1 .reword .fill{
+    font-size: 0px;
+    width: 5.45rem;
+    position: absolute;
+    left: 0.475rem;
+    top: 1rem;
+    z-index: 7;
+}
+.page1 .reword .fill .alt{
+	width: 4.2rem;
+    font-size: 0.2292rem;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    color: #ffffff;
+    /*position: absolute;*/
+    margin-left: 0.625rem;
+    margin-top: 0.2rem;
+    bottom: 8%;
+    z-index: 7;
+}
+.page1 .reword .fill .input {
+	outline: none;
+	color: #ffffff;
+	margin-bottom: 5px;
+	background-color: rgb(9,1,41);
+    font-weight: lighter;
+    font-size: 0.29rem;
+    position: relative;
+    height: 0.67rem;
+    line-height: 0.67rem;
+    border-color: rgb(105, 4, 138);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    width: 4.2rem;
+    text-align: left;
+    margin-left: 0.625rem;
+    box-shadow:inset 0 0 10px 1px rgb(22,0,64),
+    inset 0 0 10px 1px rgb(115,81,126),
+    inset 0 0 10px 1px rgb(22,0,64),
+    inset 0 0 10px 1px rgb(115,81,126);
+    z-index:5;
+    text-indent: 10px;
+}
+.page1 .reword .fill .input:first-child{
+	margin-top: 10%;
+}
+
+
+.page1 .share{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0%;
+    background: rgba(0,0,0,0.7);
+    z-index: 99999;
+    display: none;
+}
+.page1 .share .share_01{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 99;
+}
+.page1 .share .share_02{
+    width: 2.15rem;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 99;
+}
+.page .mask{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    top:0%;
+	/*background: url(../images/rulecolor.png) repeat;*/
+	background: rgba(0,0,0,0.7);
+	z-index: 99999;
+	display:none;
+}
+
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color: rgb(205,243,255);
+    font-size: 0.29rem;
+    text-align: left;
+    text-indent: 10px;
+}
+input::-moz-placeholder { /* Mozilla  browsers */
+    color: rgb(205,243,255);
+    text-align: left;
+    font-size: 0.29rem;
+    text-indent: 10px;
+}
+input::-ms-input-placeholder { /* Internet  browsers */
+    color: rgb(205,243,255);
+    text-align: left;
+    font-size: 0.29rem;
+    text-indent: 10px;
+}
